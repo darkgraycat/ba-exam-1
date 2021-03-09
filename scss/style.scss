@@ -1,9 +1,5 @@
-body {
-	background: #111;
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
 
-	div {
-		margin: 0 auto;
-		background: #333;
-	}
-	
+* {
+	box-sizing: border-box;
 }
