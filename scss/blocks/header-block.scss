@@ -1,0 +1,23 @@
+.header-block {
+	background: url('../img/bg_header.png') no-repeat center;
+	background-size: cover;
+	.content {
+		min-height: 720px;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	&__title {
+		color: #ffffff;
+	}
+
+	&__scroll-button {
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 26px;
+		color: #ffffff;
+		font-family: "Josefin Sans";
+		text-align: center;
+		text-decoration: none;
+	}
+}

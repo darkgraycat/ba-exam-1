@@ -1,0 +1,29 @@
+.footer-block {
+	min-height: 268px;
+	background-color: #232323;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__title {
+		color: #ffffff;
+	}
+
+	&__socials {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		color: #ffffff;
+	}
+
+	.title {
+		&__text {
+			font-size: 24px;
+		}
+		&__desc {
+			font-size: 16px;
+			letter-spacing: 1.5px;
+		}
+	}
+
+}

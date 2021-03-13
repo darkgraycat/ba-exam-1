@@ -1,5 +1,13 @@
 @import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap');
+@import url('https://use.fontawesome.com/18feb7deb3.css');
 
-* {
-	box-sizing: border-box;
-}
+@import 'common.scss';
+@import 'content.scss';
+@import 'blocks/header-block.scss';
+@import 'blocks/why-block.scss';
+@import 'blocks/how-block.scss';
+@import 'blocks/spain1-block.scss';
+@import 'blocks/spain2-block.scss';
+@import 'blocks/what-block.scss';
+@import 'blocks/footer-block.scss';

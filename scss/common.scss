@@ -1,0 +1,185 @@
+.title {
+	&__text {
+		font-size: 48px;
+		letter-spacing: 5px;
+		line-height: 26px;
+		font-weight: 700;
+		font-family: "Josefin Sans";
+		text-align: center;
+		margin: 10px auto;
+	}
+
+	&__desc {
+		font-size: 22px;
+		letter-spacing: 6px;
+		line-height: 26px;
+		font-family: "Josefin Sans";
+		text-align: justify;
+		margin: 10px auto;
+	}
+}
+
+.nav {
+	width: 100%;
+	height: 90px;
+	background-color: #5474fd;
+	display: flex;
+	align-items: center;
+
+	.content {
+		flex-direction: row;
+	}
+
+	&__main {
+		justify-self: flex-start;
+		font-size: 24px;
+		color: #ffffff;
+		letter-spacing: 2px;
+		font-weight: 700;
+		font-family: "Josefin Sans";
+		margin-left: 0;
+		margin-right: auto;
+	}
+
+	&__link {
+		justify-self: flex-end;
+		font-size: 14px;
+		color: #ffffff;
+		font-weight: 400;
+		font-family: "Aleo";
+		margin: 0 15px;
+	}
+
+	&__link,
+	&__main {
+		text-decoration: none;
+	}
+}
+
+.form {
+	max-width: 650px;
+	width: 100%;
+	background-color: #ffffff;
+	margin: 50px auto;
+	display: flex;
+	&__text {
+		flex-basis: 70%;
+		border: 0;
+		outline: 0;
+		text-align: center;
+		font-family: "Josefin Sans";
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 26px;
+		&::placeholder {
+			color: #999999;
+		}
+	}
+	&__button {
+		flex-basis: 30%;
+		width: 150px;
+		height: 60px;
+		background-color: #5474fd;
+		border: 2px solid #ffffff;
+		font-size: 14px;
+		letter-spacing: 1px;
+		line-height: 26px;
+		color: #ffffff;
+		font-weight: 400;
+		font-family: "Aleo";
+		text-align: center;
+		outline: 0;
+		&:hover {
+			background-color: #f34d00;
+		}
+	}
+}
+
+.tb-block {
+	background-color: #232323dd;
+	padding: 30px;
+	max-width: 540px;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-family: "Josefin Sans";
+	line-height: 26px;
+
+	&__title {
+		font-size: 20px;
+		font-weight: 400;
+		color: #ffffff;
+		margin: 30px 0;
+	}
+
+	&__text {
+		font-size: 16px;
+		line-height: 26px;
+		color: #e8e8e8;
+		font-family: "Josefin Sans";
+		font-weight: 300;
+		margin: 0px 0;
+	}
+
+	&__button {
+		margin: 40px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 225px;
+		height: 60px;
+		background: linear-gradient(45deg, #496bfe 0%,#496bfe 35%,#496bfe 35%,#5474fd 35%,#5474fd 35%,#5474fd 100%);
+		font-size: 16px;
+		letter-spacing: 1px;
+		line-height: 26px;
+		color: #ffffff;
+		font-weight: 400;
+		font-family: "Aleo";
+		text-decoration: 0;
+		&:hover {
+			background: #f34d00;
+		}
+		&:focus {
+			opacity: .9;
+		}
+	}
+}
+
+.feedback {
+	display: flex;
+	flex-direction: row;
+	margin: 60px 0;
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		padding: 30px;
+		background-color: #333333;
+	}
+
+	&__name {
+		font-size: 20px;
+		line-height: 26px;
+		font-weight: 300;
+		color: #fefefe;
+		font-family: "Josefin Sans";
+	}
+
+	&__text {
+		font-size: 17px;
+		color: #fefefe;
+		line-height: 26px;
+		font-weight: 300;
+		font-family: "Josefin Sans";
+
+		i {
+			font-size: 36px;
+			font-size: 36px;
+			line-height: 26px;
+			color: #5474fd;
+		}
+	}
+}

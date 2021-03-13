@@ -1,0 +1,38 @@
+.why-block {
+	background: url('../img/bg_why_choose_us.png') no-repeat center;
+	background-size: cover;
+	.content {
+		min-height: 680px;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.tb-block {
+		background: none;
+		&__text {
+			letter-spacing: 2px;
+			margin: 10px 0;
+		}
+		&__title {
+			margin: 50px 0;
+			font-size: 36px;
+			line-height: 26px;
+			color: #ffffff;
+			font-weight: 400;
+			font-family: "Aleo";
+		}
+	}
+
+	&__image {
+		margin: 1px;
+
+		&-1 {
+			margin-right: 125px;
+		}
+
+		&-2 {
+			margin-left: 120px;
+		}
+	}
+}
