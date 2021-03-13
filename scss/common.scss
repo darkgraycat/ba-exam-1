@@ -63,7 +63,7 @@
 	margin: 50px auto;
 	display: flex;
 	&__text {
-		flex-basis: 70%;
+		flex-basis: 75%;
 		border: 0;
 		outline: 0;
 		text-align: center;
@@ -76,7 +76,7 @@
 		}
 	}
 	&__button {
-		flex-basis: 30%;
+		flex-basis: 25%;
 		width: 150px;
 		height: 60px;
 		background-color: #5474fd;
@@ -89,6 +89,10 @@
 		font-family: "Aleo";
 		text-align: center;
 		outline: 0;
+		i {
+			margin-left: 10px;
+			margin-right: -10px;
+		}
 		&:hover {
 			background-color: #f34d00;
 		}
@@ -153,6 +157,12 @@
 	flex-direction: row;
 	margin: 60px 0;
 
+	&__image {
+		width: 100%;
+		height: auto;
+	}
+
+
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -180,6 +190,8 @@
 			font-size: 36px;
 			line-height: 26px;
 			color: #5474fd;
+			transform: translate(0px, -15px);
+			margin-right: 8px;
 		}
 	}
 }

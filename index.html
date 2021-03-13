@@ -7,10 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
 	<link rel="stylesheet" href="css/style.css">
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/18feb7deb3.css"> -->
-	<script src="https://use.fontawesome.com/18feb7deb3.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+		integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+		crossorigin="anonymous" />
 	<title>Boilerplate</title>
-	<script type="text/javascript" src="https://use.fontawesome.com/releases/v5.15.2/js/conflict-detection.js">
 	</script>
 </head>
 
@@ -24,7 +24,7 @@
 			</div>
 			<form class="header-block__form form" action="">
 				<input type="text" class="form__text" placeholder="Search Your Travel Destination">
-				<input type="submit" class="form__button" value="SEARCH">
+				<button type="submit" class="form__button">SEARCH<i class="fas fa-search"></i></button>
 			</form>
 			<a href="#" class="header-block__scroll-button">
 				Scroll down
@@ -70,9 +70,18 @@
 
 		<section class="how-block">
 			<div class="content">
-				<div class="how-block__item">Serch Places</div>
-				<div class="how-block__item">Select Places</div>
-				<div class="how-block__item">Book &amp Enjoy</div>
+				<div class="how-block__item">
+					<i class="fas fa-search"></i>
+					Search Places
+				</div>
+				<div class="how-block__item">
+					<i class="far fa-check-circle"></i>
+					Select Places
+				</div>
+				<div class="how-block__item">
+					<i class="far fa-thumbs-up"></i>
+					Book &amp Enjoy
+				</div>
 			</div>
 		</section>
 

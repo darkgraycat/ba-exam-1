@@ -508,7 +508,7 @@ template {
   display: flex;
 }
 .form__text {
-  flex-basis: 70%;
+  flex-basis: 75%;
   border: 0;
   outline: 0;
   text-align: center;
@@ -521,7 +521,7 @@ template {
   color: #999999;
 }
 .form__button {
-  flex-basis: 30%;
+  flex-basis: 25%;
   width: 150px;
   height: 60px;
   background-color: #5474fd;
@@ -534,6 +534,10 @@ template {
   font-family: "Aleo";
   text-align: center;
   outline: 0;
+}
+.form__button i {
+  margin-left: 10px;
+  margin-right: -10px;
 }
 .form__button:hover {
   background-color: #f34d00;
@@ -594,6 +598,10 @@ template {
   flex-direction: row;
   margin: 60px 0;
 }
+.feedback__image {
+  width: 100%;
+  height: auto;
+}
 .feedback__content {
   display: flex;
   flex-direction: column;
@@ -619,6 +627,8 @@ template {
   font-size: 36px;
   line-height: 26px;
   color: #5474fd;
+  transform: translate(0px, -15px);
+  margin-right: 8px;
 }
 
 .content {
@@ -626,10 +636,12 @@ template {
   height: auto;
   max-width: 1100px;
   margin: 0 auto;
+  padding: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .content__left {
   justify-self: flex-start;
@@ -649,6 +661,32 @@ template {
   font-family: "Aleo";
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .content {
+    max-width: 900px;
+  }
+}
+@media (max-width: 992px) {
+  .content {
+    max-width: 700px;
+  }
+}
+@media (max-width: 768px) {
+  .content {
+    max-width: 500px;
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    max-width: 440px;
+  }
+}
+@media (max-width: 480px) {
+  .content {
+    max-width: 300px;
+    padding: 20px 0px;
+  }
+}
 
 .header-block {
   background: url("../img/bg_header.png") no-repeat center;
@@ -663,6 +701,8 @@ template {
   color: #ffffff;
 }
 .header-block__scroll-button {
+  position: absolute;
+  bottom: 100px;
   font-size: 14px;
   letter-spacing: 3px;
   line-height: 26px;
@@ -670,6 +710,10 @@ template {
   font-family: "Josefin Sans";
   text-align: center;
   text-decoration: none;
+  margin-bottom: 0px;
+}
+.header-block__scroll-button p {
+  margin: 0px;
 }
 
 .why-block {
@@ -705,6 +749,45 @@ template {
 }
 .why-block__image-2 {
   margin-left: 120px;
+}
+
+.how-block {
+  background-color: #333333;
+  min-height: 280px;
+}
+.how-block .content {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.how-block__item {
+  font-size: 36px;
+  line-height: 26px;
+  color: #e8e8e8;
+  font-weight: 400;
+  font-family: "Aleo";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.how-block i {
+  font-size: 50px;
+  width: 96px;
+  height: 96px;
+  border-radius: 48px;
+  background-color: #333333;
+  margin: 0 auto;
+}
+.how-block .fa-search {
+  color: #5474fd;
+}
+.how-block .fa-check-circle {
+  color: #ff6363;
+}
+.how-block .fa-thumbs-up {
+  color: #00a2ff;
 }
 
 .spain1-block {
@@ -752,6 +835,10 @@ template {
   flex-direction: row;
   justify-content: space-between;
   color: #ffffff;
+  width: 180px;
+}
+.footer-block__socials i:hover {
+  color: #5474fd;
 }
 .footer-block .title__text {
   font-size: 24px;
@@ -759,6 +846,75 @@ template {
 .footer-block .title__desc {
   font-size: 16px;
   letter-spacing: 1.5px;
+}
+
+@media (max-width: 992px) {
+  .what-block__feedback {
+    flex-wrap: wrap;
+  }
+
+  .why-block .content {
+    flex-wrap: wrap;
+  }
+
+  .why-block__image {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .content__right,
+.content__left {
+    margin: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .title__text {
+    font-size: 24px;
+  }
+
+  .title__desc {
+    font-size: 18px;
+  }
+
+  .content__title {
+    font-size: 24px;
+  }
+
+  .tb-block {
+    width: 90%;
+  }
+
+  .how-block .content {
+    flex-direction: column;
+  }
+
+  .nav {
+    height: 120px;
+    padding: 10px 0px;
+  }
+  .nav .content {
+    flex-direction: column;
+    text-align: end;
+    align-items: flex-end;
+  }
+  .nav__link {
+    padding: 5px 0;
+  }
+}
+@media (max-width: 576px) {
+  .tb-block__title.content__title {
+    font-size: 24px;
+  }
+
+  .why-block__image {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .tb-block {
+    padding: 5%;
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,10 +3,12 @@
 	height: auto;
 	max-width: 1100px;
 	margin: 0 auto;
+	padding: 5%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 
 	&__left {
 		justify-self: flex-start;
@@ -28,7 +30,17 @@
 		font-family: "Aleo";
 		text-align: center;
 	}
+
+
+
+
+	// all media rules here
+
+	@media (max-width:1200px) { max-width: 900px; }
+	@media (max-width:992px) { max-width: 700px; }
+	@media (max-width:768px) { max-width: 500px; }
+	@media (max-width:576px) { max-width: 440px; }
+	@media (max-width:480px) { max-width: 300px; padding: 20px 0px;}
+
 }
 
-
-// all media rules here
