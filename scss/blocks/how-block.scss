@@ -18,6 +18,10 @@
 		flex-direction: column;
 		text-align: center;
 		padding: 20px;
+
+		&:hover {
+			background-color: #444444;
+		}
 	}
 
 	i {
